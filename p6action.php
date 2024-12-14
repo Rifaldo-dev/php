@@ -16,16 +16,13 @@ if ($menu== "mangga"){
         $harga = 12000;
         $totalharga = $harga * $jumlah;
     }
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "dbpesanan";
-    $conn = new mysqli($host, $user, $pass, $db);
+    
 
-    if($conn){
-        die("koneksi gagal: " . mysqli_connect_error());
+    $conn = mysqli_connect("localhost", "root", "", "dbpesanan");
+    if(!$conn){
+        die("koneksi gagal :" . mysqli_connect_error());
     }
-    $query ="INSERT INTO `pesanan`(`idpesanan`, `namapemesan`, `kode`, `minuman`, `jumlahpesanan`, `total_harga`) VALUES ('$id','$nama','$kode','$minuman','$jumlah','$totalharga')";
+    $query ="INSERT INTO `pesanan`(`idpesanan`, `namapemesan`, `kode`, `menu`, `jumlahpesanan`) VALUES ('$ID','$nama','$kode','$menu','$jumlah')";
     if(  mysqli_query($conn, $query)){
         echo "data berhasil di tambahkan";
     }else{
