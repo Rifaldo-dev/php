@@ -26,7 +26,7 @@ sumber: https://www.hostinger.co.id/
 
 silahkan install salah satu webserver yang tersedia, tetapi saya sarankan menggunkana xampp bagi pemula.
 setelah diinstall buka direktori ``` C:\xampp\htdocs ``` jika sudah dibuka, silahkan buat folder misal ``` belajar_php``` jadi ```C:\xampp\htdocs\belajar_php```
-![data](/img/image.png)
+![data](/img/1.png)
 ketik cmd
 ![membuka visual studio code](/img/3.png)
 
