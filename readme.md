@@ -25,7 +25,9 @@ sumber: https://www.hostinger.co.id/
 10. UwAmp
 
 ## menampilkan hello word di php
-```<?php echo "Hello world"; ?>```
+```php
+<?php echo "Hello world"; ?>
+```
 
 # Penjelasan Kode PHP: Struktur Kontrol dan Perulangan
 
