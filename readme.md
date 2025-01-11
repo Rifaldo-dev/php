@@ -1,3 +1,32 @@
+# Repo belajar PHP
+
+<img src="https://www.php.net/images/logos/php-logo-white.svg" width="250" alt="Laravel Logo">
+
+
+## Apa itu php?
+
+Hypertext Preprocessor (PHP) adalah bahasa skrip sisi server open-source yang umum digunakan di bidang pengembangan web. Bahkan, saat ini PHP digunakan oleh 78,1% dari seluruh website yang ada di dunia, termasuk Facebook dan Wikipedia.
+
+Bahasa skrip ini tersedia di semua sistem operasi utama, seperti Linux, Microsoft Windows, dan macOS. Sebagian besar web server, termasuk Apache dan IIS, juga mendukung PHP.
+sumber: https://www.hostinger.co.id/ 
+
+## cara menjalankan php
+ Untuk menjalankan program PHP, kita membutuhkan web server. Beberapa pilihan web server gratis yang lengkap dan populer adalah:
+
+1. XAMPP
+2. Laragon
+3. Nginx
+4. WAMP
+5. MAMP
+6. Apache
+7. Lighttpd
+8. IIS (Internet Information Services)
+9. EasyPHP
+10. UwAmp
+
+## menampilkan hello word di php
+```<?php echo "Hello world"; ?>```
+
 # Penjelasan Kode PHP: Struktur Kontrol dan Perulangan
 
 Kode ini mendemonstrasikan penggunaan berbagai struktur kontrol dan perulangan dalam PHP. Berikut adalah penjelasan untuk setiap bagian kode:
