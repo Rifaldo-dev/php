@@ -26,7 +26,7 @@ sumber: https://www.hostinger.co.id/
 
 silahkan install salah satu webserver yang tersedia, tetapi saya sarankan menggunkana xampp bagi pemula.
 setelah diinstall buka direktori ``` C:\xampp\htdocs ``` jika sudah dibuka, silahkan buat folder misal ``` belajar_php``` jadi ```C:\xampp\htdocs\belajar_php```
-![alt text](image.png)
+![alt text](/img/image.png)
 
 ## menampilkan hello word di php
 ```php
