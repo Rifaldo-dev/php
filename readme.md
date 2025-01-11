@@ -1,7 +1,8 @@
-# Repo belajar PHP
 
+---
 <img src="https://www.php.net/images/logos/php-logo-white.svg" width="250" alt="Laravel Logo">
 
+# Repo belajar PHP
 
 ## Apa itu php?
 
@@ -27,17 +28,36 @@ sumber: https://www.hostinger.co.id/
 silahkan install salah satu webserver yang tersedia, tetapi saya sarankan menggunkana xampp bagi pemula.
 setelah diinstall buka direktori ``` C:\xampp\htdocs ``` jika sudah dibuka, silahkan buat folder misal ``` belajar_php``` jadi ```C:\xampp\htdocs\belajar_php```
 ![data](/img/1.png)
-ketik cmd
+ketik cmd, ```code .``` berfungsi untuk membuka teks editor yaitu visual stduio code.  
 ![membuka visual studio code](/img/3.png)
 
 ![alt text](/img/2.png)
 
-## menampilkan hello word di php
+## - Menampilkan teks di php
 ```php
 <?php echo "Hello world"; ?>
 ```
+tampilan di browser
+![preview di browser](/img/4.png)
+ 
+ ## - Cek versi php 
+ 
+ <p> cek versi php yang kita gunakan saat ini ada beberapa cara sebagai berikut:
 
-# Penjelasan Kode PHP: Struktur Kontrol dan Perulangan
+ - #### Menggunakan terminal
+ ketik saja ```php -v```
+ ![cek versi di terminal](/img/5.png)
+ - #### Menggunakan syntak
+ ```php
+ <?php
+ phpinfo();
+ ?>
+ ```
+ disini kita bisa cek dengan lengkap konfigurasi yang saat ini kita gunakan
+ ![alt text](image.png)
+
+
+## Kontrol dan Perulangan
 
 Kode ini mendemonstrasikan penggunaan berbagai struktur kontrol dan perulangan dalam PHP. Berikut adalah penjelasan untuk setiap bagian kode:
 
@@ -140,16 +160,3 @@ foreach ($array as $d) {
 4. Menggunakan `foreach` untuk memproses setiap elemen dalam array.
 
 ---
-
-## Kegunaan Kode
-- Memberikan contoh bagaimana menggunakan struktur kontrol dan perulangan dalam PHP.
-- Menampilkan output dinamis berdasarkan kondisi, iterasi, atau data dalam array.
-
----
-
-## Catatan Tambahan
-- Pastikan server PHP Anda sudah diaktifkan untuk menjalankan file ini.
-- Gunakan `error_reporting(E_ALL);` jika ingin melihat semua kesalahan saat debugging.
-
-Semoga bermanfaat! 😊
-
