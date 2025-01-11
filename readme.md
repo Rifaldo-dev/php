@@ -1,6 +1,5 @@
 
----
-<img src="https://www.php.net/images/logos/php-logo-white.svg" width="250" alt="Laravel Logo">
+<img src="https://www.php.net/favicon.ico" width="250" alt="Laravel Logo">
 
 # Repo belajar PHP
 
