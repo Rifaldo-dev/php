@@ -1,3 +1,26 @@
+<?php
+        $host = "localhost";
+        $user = "root";
+        $password = "";
+        $database = "dbpesanan";
+
+        // Membuat koneksi
+        $conn = mysqli_connect($host, $user, $password, $database);
+
+        // Cek koneksi
+        if (!$conn) {
+            die("Koneksi gagal: " . mysqli_connect_error());
+        }
+
+        // Query untuk mendapatkan data
+        $query = "SELECT * FROM user";
+        $result = mysqli_query($conn, $query);
+
+        $search =isset($_GET['search']) ? $_GET['search'] : '';
+    $query = "select * from user where nama_pelanggan LIKE '%$search%' OR alamat_pelanggan  LIKE '%$search%' OR nohp LIKE '%$search%'";
+    $result = mysqli_query($conn, $query); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,6 +75,9 @@
 
 <body>
     <h2>Daftar Pelanggan</h2>
+    <form method="GET" action="">
+        <input type="text" name="search"  placeholder="ketik yang ingin dicari!" value ="<?=($search)?>">
+        <button type="submit">cari</button>
     <table>
         <tr>
             <th>No</th>
@@ -62,22 +88,8 @@
         </tr>
         <?php
         // Konfigurasi database
-        $host = "localhost";
-        $user = "root";
-        $password = "";
-        $database = "dbpesanan";
 
-        // Membuat koneksi
-        $conn = mysqli_connect($host, $user, $password, $database);
-
-        // Cek koneksi
-        if (!$conn) {
-            die("Koneksi gagal: " . mysqli_connect_error());
-        }
-
-        // Query untuk mendapatkan data
-        $query = "SELECT * FROM user";
-        $result = mysqli_query($conn, $query);
+    
 
         if (mysqli_num_rows($result) > 0) {
             $no = 1;

@@ -12,6 +12,10 @@ if (!$conn) {
 
 $query = "SELECT * FROM user";
 $result = mysqli_query($conn, $query);
+
+$search =isset($_GET['search']) ? $_GET['search'] : '';
+$query = "select * from user where nama_pelanggan LIKE '%search%' OR alamat_pelanggan  LIKE '%search%' OR nohp LIKE '%search%'";
+$result = mysqli_query($conn, $query); 
 ?>
 
 <!DOCTYPE html>
@@ -60,6 +64,11 @@ tr:hover {
 
 <body>
     <h2>Daftar Pelanggan</h2>
+    <form method="GET" action="">
+        <input type="text" name="search"  placeholder="ketik yang ingin dicari!" value =" <?=($search)?>;">
+        <button type="submit">cari</button>
+
+    </form>
     <table>
         <tr>
             <th>No</th>
@@ -85,6 +94,7 @@ tr:hover {
         } else {
             echo "<tr><td colspan='5' style = 'text-align : center;'>Tidak Ada Data</td></tr>";
         }
+    
         ?>
     </table>
 
